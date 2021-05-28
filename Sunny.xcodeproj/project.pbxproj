@@ -17,6 +17,7 @@
 		591E5DE4266010FA0067046F /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5DE3266010F90067046F /* NetworkWeatherManager.swift */; };
 		591E5DE6266013CC0067046F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5DE5266013CC0067046F /* Constants.swift */; };
 		591E5DE826610A460067046F /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5DE726610A460067046F /* CurrentWeatherData.swift */; };
+		591E5DEA26612CAD0067046F /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5DE926612CAD0067046F /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		591E5DE3266010F90067046F /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		591E5DE5266013CC0067046F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		591E5DE726610A460067046F /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
+		591E5DE926612CAD0067046F /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				591E5DE3266010F90067046F /* NetworkWeatherManager.swift */,
+				591E5DE926612CAD0067046F /* CurrentWeather.swift */,
 				591E5DE726610A460067046F /* CurrentWeatherData.swift */,
 			);
 			path = Models;
@@ -192,6 +195,7 @@
 			files = (
 				352AD2652403FA5700FE672A /* ViewController.swift in Sources */,
 				352AD27B2404DD6600FE672A /* ViewController+alertController.swift in Sources */,
+				591E5DEA26612CAD0067046F /* CurrentWeather.swift in Sources */,
 				591E5DE4266010FA0067046F /* NetworkWeatherManager.swift in Sources */,
 				352AD2612403FA5700FE672A /* AppDelegate.swift in Sources */,
 				352AD2632403FA5700FE672A /* SceneDelegate.swift in Sources */,
