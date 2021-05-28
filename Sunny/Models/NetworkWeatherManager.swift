@@ -6,11 +6,17 @@
 //  Copyright © 2021 Ivan Akulov. All rights reserved.
 //
 
+protocol NetworkWeatherManagerDelegate: class {
+    func updateInterface(_: NetworkWeatherManager, with currentWeather: CurrentWeather )
+}
+
+
 import Foundation
 
-struct NetworkWeatherManager {
+class NetworkWeatherManager {
     
-    var  onCompletion: ((CurrentWeather) -> Void)?
+    weak var delegate: NetworkWeatherManagerDelegate?
+    
     
     
     func fetchCurrentWeather(forCity city: String){
@@ -20,7 +26,7 @@ struct NetworkWeatherManager {
         let task = session.dataTask(with: url) { data, response, error in
             if let data = data {
                 if let currentWeather = self.parseJSON(withData: data){
-                    self.onCompletion?(currentWeather)
+                    self.delegate?.updateInterface(self, with: currentWeather)
                 }
             }
         }
